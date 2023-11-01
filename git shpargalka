@@ -1,0 +1,31 @@
+git config --global user.name [username]   //sets the username
+git config --global user.email [user email]   //sets the user email
+
+git config --global core.pager cat  // show log command output in the terminal
+
+git  user.name  //shows configurated username
+git  user.email  //shows configurated user email
+
+git init  //creates git repo in current folder
+
+git add [filename]  //staging file
+git add .  //staging all the files
+
+git status // shows info about files
+git commit -m "message"  //creates commit with message in between  quotes ""
+
+git checkout [commit code]  //just shows the undone
+git revert [commit code or branchname]  //creates new commit with undone things but all the commits are untouched
+git reset [commit code or branchname]  // undoing changes but newest version still is in editor
+git reset [commit code or branchname] --hard  //permanantly  undoing changes
+
+git branch [branchname]  //creates a new branch
+git branch -a  //lists branches
+git branch -d [branchname]  //deletes branch if it's merged
+git branch -D [branchname]  //deletes branch no matter what
+git branch -m [old-name] [new-name]  // renames branch
+
+git checkout [branchname]  //switches branches
+git checkout -b [branchname]  //creates and checkouts new branch
+
+git merge [branchname]  //merges written  branch into current branch
